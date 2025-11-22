@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+    background-color: black;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#box {
+    background-color: crimson;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    background-color: lightseagreen;
+}
