@@ -10,30 +10,23 @@ html, body {
 }
 
 body{
-    background-color: black;
+    overflow: hidden;
 }
 
 main {
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
+    background: #000;
 }
 
-#box {
-    background-color: crimson;
-    height: 250px;
-    width: 250px;
-    border-radius: 10px;
-}
-
-button{
-    border: none;
+button {
+    background-color: antiquewhite;
     padding: 10px 20px;
-    border-radius: 8px;
-    color: rgb(0, 0, 0);
-    background-color: lightseagreen;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    z-index: 9;
 }
