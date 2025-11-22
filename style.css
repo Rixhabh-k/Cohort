@@ -10,23 +10,23 @@ html, body {
 }
 
 body{
-    overflow: hidden;
+  cursor: none;
 }
 
-main {
-    height: 100%;
-    width: 100%;
-    background: #000;
+main{
+  height: 100%;
+  width: 100%;
+  background: #000;
 }
 
-button {
-    background-color: antiquewhite;
-    padding: 10px 20px;
-    font-weight: 700;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: none;
-    z-index: 9;
+#cursor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cursor img {
+  height: 40px;
+  position: fixed;
+  transform: translate(-50%,-50%);
 }
