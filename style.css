@@ -9,24 +9,58 @@ html, body {
   width: 100%;
 }
 
-body{
-  cursor: none;
-}
+
 
 main{
   height: 100%;
   width: 100%;
   background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#cursor{
+
+#box {
+  background: white;
+  /* height: 300px; */
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#box p {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.outer{
+  background-color: gray;
+  height: 15px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.inner{
+  height: 100%;
+  width: 0%;
+  background-color: green;
+  border-radius: 20px;
+}
+
+.bottom{
+  margin-top: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-#cursor img {
-  height: 40px;
-  position: fixed;
-  transform: translate(-50%,-50%);
+#Download{
+  background: green;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 2px;
 }
