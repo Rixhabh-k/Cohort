@@ -21,46 +21,8 @@ main{
 }
 
 
-#box {
-  background: white;
-  /* height: 300px; */
-  width: 500px;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-#box p {
-  margin-bottom: 10px;
-  font-size: 1.3rem;
-}
-
-.outer{
-  background-color: gray;
-  height: 15px;
-  width: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.inner{
-  height: 100%;
-  width: 0%;
-  background-color: green;
-  border-radius: 20px;
-}
-
-.bottom{
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#Download{
-  background: green;
-  color: white;
-  border: none;
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  border-radius: 2px;
+p{
+  color: green;
+  font-family: "Courier New", monospace;
+  
 }

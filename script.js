@@ -1,33 +1,35 @@
-var inner = document.querySelector('.inner')
+let p = document.querySelector('p')
 
-var btn = document.querySelector('#Download')
+let text = p.innerHTML
 
-var progress = document.querySelector('#progress')
+let character = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
-var main = document.querySelector('main')
+let iteration = 0
 
-btn.addEventListener('click', function () {
-    var a = 0
+function randomText(){
+    let str = text.split("").map((char, index)=>{
+        if(index<iteration){
+            return char
+        }
+        return character.split("")[Math.floor(Math.random()*52)]
+    }).join("")
 
-    var int = setInterval(function () {
-        a++
-        inner.style.width = a + "%"
+    p.innerHTML = str
 
-        progress.textContent = a + "%"
+    iteration += 0.25
 
-    }, 50)
-
-    btn.disabled = true
-
-    setTimeout(function(){
-        clearInterval(int)
-    },5000)
-
+ 
+if(iteration>= text.length){
+        clearInterval(str)
+    }
     
 
-})
+
+}
+
+setInterval(function(){
+    randomText()
+},30)
 
 
-
-
-
+    
